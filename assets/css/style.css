@@ -2,6 +2,18 @@
     padding-bottom: 100px;
 }
 
+#homeHeader,
+.ui.header,
+#modalHeader {
+    font-family: 'Titan One', cursive;
+    font-size: 28px;
+}
+
+#navigation,
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
 footer {
     position: fixed;
     bottom: 0;

@@ -123,7 +123,7 @@ function generateProjectModal(project){
     var modalContainer = $('<div>').attr('class','ui modal');
     $('#mainContainer').append(modalContainer);
     $('i').attr('class', 'close icon').appendTo(modalContainer);
-    $('<div>').attr('class', 'header').text(appName).appendTo(modalContainer);
+    $('<div>').attr({class: 'header', id: 'modalHeader'}).text(appName).appendTo(modalContainer);
     var imageContainer = $('<div>').attr('class','image content').appendTo(modalContainer);
     var imageDiv = $('<div>').attr('class', 'ui medium image').appendTo(imageContainer);
     $('<img>').attr('src', pic).appendTo(imageDiv);
