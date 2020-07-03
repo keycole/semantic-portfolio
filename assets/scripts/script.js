@@ -48,31 +48,31 @@ var projectDetails = [
     {
         name: 'Project Two',
         description: 'Coming Soon',
-        image: '',
+        image: 'assets/images/sumat-singh-TUTo_ON2w8o-unsplash.jpg',
         url: '#'
     },
     {
         name: 'Project Three',
         description: 'Coming Soon',
-        image: '',
+        image: 'assets/images/freya-ingva-6P9JgFe3f9Q-unsplash.jpg',
         url: '#'
     },
     {
         name: 'Project Four',
         description: 'Coming Soon',
-        image: '',
+        image: 'assets/images/leandro-soengas-LwjdoCFew0w-unsplash.jpg',
         url: '#'
     },
     {
         name: 'Project Five',
         description: 'Coming Soon',
-        image: '',
+        image: 'assets/images/yin-wong-SMFLG46c5S4-unsplash.jpg',
         url: '#'
     },
     {
         name: 'Project Six',
         description: 'Coming Soon',
-        image: '',
+        image: 'assets/images/marcella-marcella-hn6CC9aosEk-unsplash.jpg',
         url: '#'
     }
 ]
@@ -131,7 +131,11 @@ function generateProjectModal(project){
     $('<div>').attr('class', 'ui header').text('Project Summary').appendTo(descriptionContainer);
     $('<p>').text(summary).appendTo(descriptionContainer);
     var buttonContainer = $('<div>').attr('class', 'actions').appendTo(modalContainer);
-    $('<div>').attr('class', 'ui black deny button').text('Back').appendTo(buttonContainer);
+    var closeButton = $('<div>').attr('class', 'ui black deny button').text('Back').appendTo(buttonContainer);
+    closeButton.click(function(){
+        $('.ui.modal').modal('hide dimmer');
+        buildPortfolioPage();
+    })
     var projectLink = $('<div>').attr({class: 'ui positive button', src: link, target: '_blank'}).text('Visit Site').appendTo(buttonContainer);
     projectLink.click(function(){
         event.preventDefault();
