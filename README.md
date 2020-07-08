@@ -7,3 +7,16 @@ In an effort to familiarize myself with Semantic-UI, I used the framework to reb
 1. [Semantic UI](https://semantic-ui.com/)
 1. [jQuery](https://jquery.com/)
 1. [Google Fonts](https://fonts.google.com/specimen/Titan+One?category=Display&sidebar.open&selection.family=Raleway|Titan+One#license)
+
+## Screenshots
+
+### Desktop
+![Desktop Portfolio](assets/readmeImages/desktopPortfolio.gif)
+
+
+### Tablet
+![Tablet Portfolio](assets/readmeImages/tabletPortfolio.gif)
+
+
+### Mobile
+![Mobile Portfolio](assets/readmeImages/mobilePortfolio.gif)

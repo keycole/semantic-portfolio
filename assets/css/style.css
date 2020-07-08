@@ -14,10 +14,15 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+#homeHeader{
+    margin-top: 10px;
+}
+
+#portfolioHeader{
+    margin-top: 10px;
+}
+
+/* footer {
     height: 60px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -25,4 +30,4 @@ footer {
     margin-top: 0;
     margin-bottom: 0;
     text-align: center;
-}
+} */

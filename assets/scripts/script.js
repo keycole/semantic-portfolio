@@ -5,37 +5,10 @@ $('#portfolio').click(function(){
     $('#home').attr('class', 'item');
     $('#portfolio').attr('class', 'active item');
     $('#contact').attr('class', 'item');
+    $('#pageTitle').text('Nicole Graiff | Portfolio');
     //build portfolio page
-    buildPortfolioPage(myProjects, projectDetails);
+    buildPortfolioPage(projectDetails);
 });
-
-//portfolio image array
-var myProjects = [
-    {
-        name: 'Food App',
-        image: 'assets/images/ehimetalor-akhere-unuabona-Zh0mYmMBZjQ-unsplash.jpg',
-    },
-    {
-        name: 'Project Two',
-        image: 'assets/images/sumat-singh-TUTo_ON2w8o-unsplash.jpg',
-    },
-    {
-        name: 'Project Three',
-        image: 'assets/images/freya-ingva-6P9JgFe3f9Q-unsplash.jpg',
-    },
-    {
-        name: 'Project Four',
-        image: 'assets/images/leandro-soengas-LwjdoCFew0w-unsplash.jpg',
-    },
-    {
-        name: 'Project Five',
-        image: 'assets/images/yin-wong-SMFLG46c5S4-unsplash.jpg',
-    },
-    {
-        name: 'Project Six',
-        image: 'assets/images/marcella-marcella-hn6CC9aosEk-unsplash.jpg',
-    },
-]
 
 //project descriptions array
 var projectDetails = [
@@ -85,15 +58,15 @@ function buildPortfolioPage(){
     $('#contact').attr('class', 'item');
     //build the page
     var portfolioContainer = $('<div>').attr('class', 'container').appendTo('#mainContainer');
-    $('<h1>').attr('class', 'ui header').text('Portfolio').appendTo(portfolioContainer);
+    $('<h1>').attr({class: 'ui header', id: 'portfolioHeader'}).text('Portfolio').appendTo(portfolioContainer);
     var mainCardContainer = $('<div>').attr('class', 'ui three column stackable grid').appendTo(portfolioContainer);
-    for(var i = 0; i < myProjects.length; i++){
+    for(var i = 0; i < projectDetails.length; i++){
     var cardColumn = $('<div>').attr('class', 'column').appendTo(mainCardContainer);
     var card = $('<div>').attr('class', 'ui fluid card').appendTo(cardColumn);
     var imageContainer = $('<div>').attr('class', 'centered column').appendTo(card);
-    $('<img>').attr('src', myProjects[i].image).css('width', '100%').appendTo(imageContainer);
+    $('<img>').attr('src', projectDetails[i].image).css('width', '100%').appendTo(imageContainer);
     var titleContainer = $('<div>').attr('class', 'content').appendTo(card);
-    var projectTitle = $('<a>').attr({class: 'header portfolioPage', id: i}).text(myProjects[i].name).appendTo(titleContainer);
+    var projectTitle = $('<a>').attr({class: 'header portfolioPage', id: i}).text(projectDetails[i].name).appendTo(titleContainer);
     //Create a modal with more information for clicked item
     projectTitle.click(function(){
         var selectedID = $(this).attr('id');
@@ -151,6 +124,7 @@ $('#contact').click(function(){
     $('#home').attr('class', 'item');
     $('#portfolio').attr('class', 'item');
     $('#contact').attr('class', 'active item');
+    $('#pageTitle').text('Nicole Graiff | Contact');
     //build contact page
     var contactContainer = $('<div>').attr('class', 'sixteen wide column').appendTo('#mainContainer');
     $('<h1>').attr('class', 'ui header').text('Say Hello').appendTo(contactContainer);
