@@ -16,23 +16,23 @@
 
 <body>
   <!--Navigation-->
-  <div class="ui top fixed green three item inverted menu" id="navigation">
+  <div class="ui top fixed green two item inverted menu" id="navigation">
     <a class="active item" id="home" href="index.html">
       Home
     </a>
     <a class="item" id="portfolio">
       Portfolio
     </a>
-    <a class="item" id="contact">
+    <!-- <a class="item" id="contact">
       Contact
-    </a>
+    </a> -->
   </div>
   <div class="ui stackable padded grid" id="mainContainer">
     <div class="column">
-      <div class="ui items">
+      <div class="ui items" id="introContainer">
         <div class="item">
-          <div class="ui medium circular image">
-            <img src="assets/images/graiffHeadshotSquare.jpg">
+          <div class="ui medium circular image" id="picContainer">
+            <img src="assets/images/graiffHeadshotSquare.jpg" id="profilePic">
           </div>
           <div class="content">
             <a class="header" id="homeHeader">About Me</a>
@@ -50,7 +50,11 @@
             <div class="extra">
               Skills: HTML, CSS, JavaScript, Node, Agile Methodology, Project Management
             </div>
-          </div>
+            <div class="extra">
+              <button class="ui positive basic button"><a id="resumeButton" href="assets/images/Resume.pdf" target="_blank">Resume</a></button>
+              <button class="ui positive basic button"><a id="emailButton" href="mailto:nicole.graiff@gmail.com?subject=Portfolio Contact Message">Contact Me</a></button>
+            </div>
+          </div>                                                                                                                                                                                                                                                                                                       
         </div>
       </div>
     </div>
@@ -58,9 +62,9 @@
   <!--End mainContainer-->
   <!--Footer-->
   <footer class="ui bottom fixed three item menu">
-    <a class="item" href="#"><i class="green linkedin icon"></i>&nbsp;LinkedIn</a>
+    <a class="item" href="https://www.linkedin.com/in/fullstackdev-nicoleg/" target="_blank"><i class="green linkedin icon"></i>&nbsp;LinkedIn</a>
     <a class="item" href="https://github.com/keycole" target="_blank"><i class="green github alternate icon"></i>&nbsp;GitHub</a>
-    <a class="item" href="mailto:nicole.graiff@gmail.com" target="_blank"><i class="green at icon"></i>&nbsp;Email</a>
+    <a class="item" href="mailto:nicole.graiff@gmail.com?subject=Portfolio Contact Message" target="_blank"><i class="green at icon"></i>&nbsp;Email</a>
   </footer>
   <!--End Footer-->
   <!--jQuery-->

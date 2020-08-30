@@ -15,38 +15,38 @@ var projectDetails = [
     {
         name: 'Food App',
         description: 'A recipe search app to put customized menu planning for your next party at the tip of your fingers.',
-        image: 'assets/images/ehimetalor-akhere-unuabona-Zh0mYmMBZjQ-unsplash.jpg',
-        url: 'https://mackenzieraeclark.github.io/Project1/'
+        image: 'assets/images/projectOne.png',
+        url: 'https://mackenzieraeclark.github.io/Eat-Drink/'
     },
     {
-        name: 'Project Two',
-        description: 'Coming Soon',
-        image: 'assets/images/sumat-singh-TUTo_ON2w8o-unsplash.jpg',
-        url: '#'
+        name: 'Eat \'da Veggie Burger',
+        description: 'A whimsical app that allows you to log veggie burgers that you would like to eat and mark them as "devoured" after you have satisfied your craving.',
+        image: 'assets/images/vegburgerApp.png',
+        url: 'https://veggie-burger-nom-nom.herokuapp.com/'
     },
     {
-        name: 'Project Three',
-        description: 'Coming Soon',
-        image: 'assets/images/freya-ingva-6P9JgFe3f9Q-unsplash.jpg',
-        url: '#'
+        name: 'NoteTaker',
+        description: 'An application that can be used to write, save, update, and delete notes.',
+        image: 'assets/images/notesApp.png',
+        url: 'https://boiling-journey-11707.herokuapp.com/'
     },
     {
-        name: 'Project Four',
-        description: 'Coming Soon',
-        image: 'assets/images/leandro-soengas-LwjdoCFew0w-unsplash.jpg',
-        url: '#'
+        name: 'Make Time',
+        description: 'A simple calendar application that allows the user to save events for each hour of the day.',
+        image: 'assets/images/makeTimeApp.png',
+        url: 'https://keycole.github.io/work-day-scheduler/'
     },
     {
-        name: 'Project Five',
-        description: 'Coming Soon',
-        image: 'assets/images/yin-wong-SMFLG46c5S4-unsplash.jpg',
-        url: '#'
+        name: 'Team Template',
+        description: 'A Node CLI that takes in information about employees and generates an HTML webpage that displays summaries for each person.',
+        image: 'assets/images/teamGenerator.png',
+        url: 'https://github.com/keycole/employee-summary-template-engine'
     },
     {
-        name: 'Project Six',
-        description: 'Coming Soon',
-        image: 'assets/images/marcella-marcella-hn6CC9aosEk-unsplash.jpg',
-        url: '#'
+        name: 'Peregrine',
+        description: 'Provides an insider\'s look at travel, helping people to find niche spots with authentic experiences.',
+        image: 'assets/images/travelApp.png',
+        url: 'https://peregrine-travel.herokuapp.com/'
     }
 ]
 

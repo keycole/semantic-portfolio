@@ -22,6 +22,11 @@ body {
     margin-top: 10px;
 }
 
+#resumeButton, #emailButton {
+    text-decoration: none;
+    color: rgb(89, 182, 85) !important;
+}
+
 /* footer {
     height: 60px;
     padding-top: 20px;
