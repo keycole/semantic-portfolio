@@ -11,12 +11,12 @@ In an effort to familiarize myself with Semantic-UI, I used the framework to reb
 ## Screenshots
 
 ### Desktop
-![Desktop Portfolio](assets/readmeImages/desktopPortfolio.gif)
+![Desktop Portfolio](assets/readmeImages/newDesktopPortfolio.gif)
 
 
 ### Tablet
-![Tablet Portfolio](assets/readmeImages/tabletPortfolio.gif)
+![Tablet Portfolio](assets/readmeImages/newTabletPortfolio.gif)
 
 
 ### Mobile
-![Mobile Portfolio](assets/readmeImages/mobilePortfolio.gif)
+![Mobile Portfolio](assets/readmeImages/newMobilePortfolio.gif)
