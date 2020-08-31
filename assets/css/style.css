@@ -30,6 +30,10 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+.ui.items>.item>.image>img {
+    border-radius: 500rem !important;
+}
+
 #homeHeader{
     margin-top: 10px;
 }
