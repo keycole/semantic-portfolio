@@ -1,7 +1,7 @@
 # Semantic Portfolio
 In an effort to familiarize myself with Semantic-UI, I used the framework to rebuild my portfolio page.
 
-**Page Link:** https://keycole.github.io/semantic-portfolio/index.html
+**Page Link:** https://keycole.github.io/semantic-portfolio/
 
 ## Built With:
 1. [Semantic UI](https://semantic-ui.com/)
