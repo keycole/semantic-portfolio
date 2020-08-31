@@ -16,36 +16,42 @@ var projectDetails = [
         name: 'Food App',
         description: 'A recipe search app to put customized menu planning for your next party at the tip of your fingers.',
         image: 'assets/images/projectOne.png',
+        gitLink: 'https://github.com/mackenzieraeclark/Eat-Drink',
         url: 'https://mackenzieraeclark.github.io/Eat-Drink/'
     },
     {
         name: 'Eat \'da Veggie Burger',
         description: 'A whimsical app that allows you to log veggie burgers that you would like to eat and mark them as "devoured" after you have satisfied your craving.',
         image: 'assets/images/vegburgerApp.png',
+        gitLink: 'https://github.com/keycole/burger',
         url: 'https://veggie-burger-nom-nom.herokuapp.com/'
     },
     {
         name: 'NoteTaker',
         description: 'An application that can be used to write, save, update, and delete notes.',
         image: 'assets/images/notesApp.png',
+        gitLink: 'https://github.com/keycole/take-note',
         url: 'https://boiling-journey-11707.herokuapp.com/'
     },
     {
         name: 'Make Time',
         description: 'A simple calendar application that allows the user to save events for each hour of the day.',
         image: 'assets/images/makeTimeApp.png',
+        gitLink: 'https://github.com/keycole/work-day-scheduler',
         url: 'https://keycole.github.io/work-day-scheduler/'
     },
     {
         name: 'Team Template',
         description: 'A Node CLI that takes in information about employees and generates an HTML webpage that displays summaries for each person.',
         image: 'assets/images/teamGenerator.png',
+        gitLink: 'https://github.com/keycole/employee-summary-template-engine',
         url: 'https://github.com/keycole/employee-summary-template-engine'
     },
     {
         name: 'Peregrine',
         description: 'Provides an insider\'s look at travel, helping people to find niche spots with authentic experiences.',
         image: 'assets/images/travelApp.png',
+        gitLink: 'https://github.com/jamescook98/peregrine',
         url: 'https://peregrine-travel.herokuapp.com/'
     }
 ]
@@ -61,8 +67,8 @@ function buildPortfolioPage(){
     $('<h1>').attr({class: 'ui header', id: 'portfolioHeader'}).text('Portfolio').appendTo(portfolioContainer);
     var mainCardContainer = $('<div>').attr('class', 'ui three column stackable grid').appendTo(portfolioContainer);
     for(var i = 0; i < projectDetails.length; i++){
-    var cardColumn = $('<div>').attr('class', 'column').appendTo(mainCardContainer);
-    var card = $('<div>').attr('class', 'ui fluid card').appendTo(cardColumn);
+    var cardColumn = $('<div>').attr('class','column').appendTo(mainCardContainer);
+    var card = $('<div>').attr({class: 'ui fluid card', id:'portfolioCard'}).appendTo(cardColumn);
     var imageContainer = $('<div>').attr('class', 'centered column').appendTo(card);
     $('<img>').attr('src', projectDetails[i].image).css('width', '100%').appendTo(imageContainer);
     var titleContainer = $('<div>').attr('class', 'content').appendTo(card);
@@ -90,6 +96,8 @@ function generateProjectModal(project){
         console.log('pic = ', pic);
     var summary = project.description;
         console.log('summary = ', summary);
+    var gitLink = project.gitLink;
+        console.log('gitLink = ', summary);
     var link = project.url;
         console.log('link = ', link);
     //build the modal
@@ -108,6 +116,11 @@ function generateProjectModal(project){
     closeButton.click(function(){
         $('.ui.modal').modal('hide dimmer');
         buildPortfolioPage();
+    })
+    var githubLink = $('<div>').attr({class: 'ui positive button', src: gitLink, target: '_blank'}).text('GitHub').appendTo(buttonContainer);
+    githubLink.click(function(){
+        event.preventDefault();
+        window.location = gitLink;
     })
     var projectLink = $('<div>').attr({class: 'ui positive button', src: link, target: '_blank'}).text('Visit Site').appendTo(buttonContainer);
     projectLink.click(function(){
